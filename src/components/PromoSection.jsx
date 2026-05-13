@@ -2,14 +2,17 @@ import Image from "next/image";
 
 export default function PromoSection() {
   return (
-    <div className="grid md:grid-cols-3">
+    <section
+      id="promo"
+      className="grid grid-cols-1 md:grid-cols-3"
+    >
       
-      <div className="bg-red-400 p-10 relative overflow-hidden">
+      <div className="bg-[#254b95] p-10 relative overflow-hidden min-h-[300px] flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-white mb-4">
           Chicha Burger
         </h1>
 
-        <button className="bg-white text-red-500 px-6 py-2 rounded-full">
+        <button className="bg-white text-[#254b95] px-6 py-3 rounded-full w-fit">
           ORDER NOW
         </button>
 
@@ -22,12 +25,12 @@ export default function PromoSection() {
         />
       </div>
 
-      <div className="bg-yellow-400 p-10 relative overflow-hidden">
+      <div className="bg-[#3f66b4] p-10 relative overflow-hidden min-h-[300px] flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-white mb-4">
           Friend Burger
         </h1>
 
-        <button className="bg-white text-red-500 px-6 py-2 rounded-full">
+        <button className="bg-white text-[#254b95] px-6 py-3 rounded-full w-fit">
           ORDER NOW
         </button>
 
@@ -40,12 +43,12 @@ export default function PromoSection() {
         />
       </div>
 
-      <div className="bg-orange-400 p-10 relative overflow-hidden">
+      <div className="bg-[#1d3c79] p-10 relative overflow-hidden min-h-[300px] flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-white mb-4">
           Grill Thrill
         </h1>
 
-        <button className="bg-white text-red-500 px-6 py-2 rounded-full">
+        <button className="bg-white text-[#254b95] px-6 py-3 rounded-full w-fit">
           ORDER NOW
         </button>
 
@@ -57,6 +60,6 @@ export default function PromoSection() {
           className="absolute right-0 bottom-0"
         />
       </div>
-    </div>
+    </section>
   );
 }
