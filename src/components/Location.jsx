@@ -7,9 +7,9 @@ import {
 export default function LocationSection() {
   return (
     <section
-        id="location"
-        className="py-24"
-        style={{ fontFamily: "cursive" }}
+      id="location"
+      className="py-24"
+      style={{ fontFamily: "cursive" }}
     >
       {/* Heading */}
       <div className="text-center mb-20">
@@ -17,9 +17,7 @@ export default function LocationSection() {
           Visit Us
         </h3>
 
-        <h1
-          className="text-4xl sm:text-5xl md:text-6xl font-black text-[#254b95] mb-6"
-        >
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#254b95] mb-6">
           Our Location
         </h1>
 
@@ -32,10 +30,10 @@ export default function LocationSection() {
 
       {/* Main Layout */}
       <div className="grid lg:grid-cols-2 gap-1 w-full">
-        
+
         {/* Left Side */}
         <div className="bg-[#254b95] text-white p-8 sm:p-12 flex flex-col justify-center min-h-[500px]">
-          
+
           <h2
             className="text-4xl sm:text-5xl font-black mb-12"
             style={{ fontFamily: "cursive" }}
@@ -53,7 +51,6 @@ export default function LocationSection() {
               <h3 className="text-2xl font-bold mb-2">
                 Address
               </h3>
-
               <p className="leading-7 text-white/90">
                 Gateway Towers, Faisalabad, Pakistan
               </p>
@@ -70,7 +67,6 @@ export default function LocationSection() {
               <h3 className="text-2xl font-bold mb-2">
                 Contact
               </h3>
-
               <p className="text-white/90">
                 +92 327-0111122
               </p>
@@ -87,7 +83,6 @@ export default function LocationSection() {
               <h3 className="text-2xl font-bold mb-2">
                 Opening Hours
               </h3>
-
               <p className="leading-7 text-white/90">
                 Monday - Sunday <br />
                 4:00 PM - 2:00 AM
@@ -97,26 +92,29 @@ export default function LocationSection() {
 
           {/* Button */}
           <a
-            href="https://www.google.com/maps/place/Gateway+Towers/@31.4018435,73.1055012,17z/data=!3m1!4b1!4m6!3m5!1s0x392267e1ff9d2507:0xb33d5b01d7a61d84!8m2!3d31.4018435!4d73.1055012!16s%2Fg%2F1hf1lkkl8!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMi4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.com/maps/place/Gateway+Towers/@31.4018435,73.1055012,17z/"
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-block border-2 border-white hover:bg-white hover:text-[#254b95] duration-300 px-8 py-4 font-bold tracking-wide w-fit"
           >
             OPEN IN GOOGLE MAPS
           </a>
         </div>
 
-        {/* Right Side */}
+        {/* Right Side (MAP FIXED) */}
         <div className="min-h-[500px]">
           <iframe
-            src="https://www.google.com/maps/place/Gateway+Towers/@31.4018435,73.1055012,17z/data=!3m1!4b1!4m6!3m5!1s0x392267e1ff9d2507:0xb33d5b01d7a61d84!8m2!3d31.4018435!4d73.1055012!16s%2Fg%2F1hf1lkkl8!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMi4wIKXMDSoASAFQAw%3D%3D"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.445619899703!2d73.10389773120723!3d31.40184634130324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392267e1ff9d2507%3A0xb33d5b01d7a61d84!2sGateway%20Towers!5e0!3m2!1sen!2s!4v1778792904672!5m2!1sen!2s"
             width="100%"
             height="100%"
-            allowFullScreen=""
+            style={{ border: 0 }}
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-full min-h-[500px]"
           ></iframe>
         </div>
+
       </div>
     </section>
   );
