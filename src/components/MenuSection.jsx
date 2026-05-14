@@ -1,112 +1,202 @@
-import Image from "next/image";
-import { FaShoppingBasket } from "react-icons/fa";
+const menuData = {
+  beefBurgers: [
+    { name: "Black Beast", price: "***/Rs" },
+    { name: "Shroom Melt", price: "***/Rs" },
+    { name: "Onion Bomb", price: "***/Rs" },
+    { name: "The OG", price: "***/Rs" },
+    { name: "Pink Panther", price: "***/Rs" },
+    { name: "Mini Thief Gang", price: "***/Rs" },
+  ],
 
-const burgers = [
-  {
-    title: "Classic Burger",
-    image: "/burger1.png",
-    price: "$7.99",
-  },
-  {
-    title: "Cheese Burger",
-    image: "/burger2.png",
-    price: "$8.49",
-  },
-  {
-    title: "Double Patty",
-    image: "/burger3.png",
-    price: "$9.99",
-  },
-  {
-    title: "Chicken Burger",
-    image: "/burger1.png",
-    price: "$7.49",
-  },
-  {
-    title: "Smoky Burger",
-    image: "/burger2.png",
-    price: "$8.99",
-  },
-  {
-    title: "Beef Burger",
-    image: "/burger3.png",
-    price: "$10.99",
-  },
-  {
-    title: "Special Burger",
-    image: "/burger1.png",
-    price: "$11.49",
-  },
-  {
-    title: "Mega Burger",
-    image: "/burger2.png",
-    price: "$12.99",
-  },
-];
+  chickenBurgers: [
+    { name: "The Great Robbery", price: "**/Rs" },
+    { name: "Undercover Fillet", price: "**/Rs" },
+  ],
+
+  wraps: [
+    { name: "Chicken Messy", price: "**/Rs" },
+    { name: "Beef Messy", price: "**/Rs" },
+  ],
+
+  fries: [
+    { name: "Plain Fries", price: "***/Rs" },
+    { name: "Curly Fries", price: "***/Rs" },
+    { name: "Chicken Messy Fries", price: "***/Rs" },
+    { name: "Beef Messy Fries", price: "***/Rs" },
+  ],
+
+  drinks: [
+    { name: "Coke", price: "***/Rs" },
+    { name: "Sprite", price: "***/Rs" },
+    { name: "Sparkling Water", price: "***/Rs" },
+  ],
+};
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="py-20 px-4 sm:px-6 md:px-10">
-      
+    <section
+      id="menu"
+      className="py-20 px-4 sm:px-6 md:px-10"
+      style={{ fontFamily: "cursive" }}
+    >
       {/* Heading */}
-      <div className="text-center mb-16">
-        <h3 className="text-[#254b95] font-semibold tracking-[3px] uppercase mb-3">
-          Our Special Menu
+      <div className="text-center mb-20">
+        <h3 className="text-[#254b95] uppercase tracking-[5px] text-sm font-bold mb-4">
+          Highly Snatchable
         </h3>
 
-        <h1 className="text-5xl font-extrabold text-[#254b95]">
-          Dine In + Delivery
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl font-black text-[#254b95]"
+          
+        >
+          Our Menu
         </h1>
       </div>
 
-      {/* 4x4 Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        {burgers.map((burger, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-[30px] p-6 shadow-md hover:shadow-2xl hover:-translate-y-3 duration-300 group"
-          >
-            
-            {/* Burger Image */}
-            <div className="flex justify-center mb-5">
-              <Image
-                src={burger.image}
-                width={180}
-                height={180}
-                alt={burger.title}
-                className="group-hover:scale-110 duration-300 drop-shadow-xl"
-              />
-            </div>
+      {/* Beef Burgers */}
+      <div className="mb-20">
+        <h2
+          className="text-3xl sm:text-3xl font-black text-[#254b95] mb-10 underline"
+          
+        >
+          Beef Burgers
+        </h2>
 
-            {/* Burger Title */}
-            <h1 className="text-2xl font-bold text-[#254b95] text-center">
-              {burger.title}
-            </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {menuData.beefBurgers.map((item, index) => (
+            <div
+              key={index}
+              className="border-2 border-[#254b95] rounded-xl bg-[#fffaf0] p-8 hover:-translate-y-0.5 duration-300"
+            >
+              <div className="flex justify-between items-center mb-6">
+                <h1
+                  className="text-2xl font-bold text-[#254b95]"
+                  
+                >
+                  {item.name}
+                </h1>
 
-            {/* Description */}
-            <p className="text-gray-500 text-center text-sm mt-3 mb-5">
-              Fresh grilled burger with premium cheese and crispy veggies.
-            </p>
+                <span className="text-xl font-bold text-[#254b95]">
+                  {item.price}
+                </span>
+              </div>
 
-            {/* Price */}
-            <h2 className="text-center text-2xl font-extrabold text-[#254b95] mb-5">
-              {burger.price}
-            </h2>
+              <p className="text-[#254b95] mb-8" >
+                Fresh grilled beef burger with signature sauces and premium ingredients.
+              </p>
 
-            {/* Buttons */}
-            <div className="flex items-center justify-between gap-3">
-              
-              <button className="bg-[#254b95] hover:bg-[#1d3c79] duration-300 text-white p-3 rounded-full shadow-lg">
-                <FaShoppingBasket />
-              </button>
-
-              <button className="border-2 border-[#254b95] text-[#254b95] hover:bg-[#254b95] hover:text-white duration-300 px-5 py-2 rounded-full font-semibold w-full">
+              <button className="w-full bg-[#254b95] hover:bg-[#1d3c79] duration-300 text-white py-3 rounded-full font-semibold line-through">
                 ORDER NOW
               </button>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Chicken Burgers */}
+      <div className="mb-20">
+        <h2
+          className="text-3xl sm:text-3xl font-black text-[#254b95] mb-10 underline"
+          
+        >
+          Chicken Burgers
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {menuData.chickenBurgers.map((item, index) => (
+            <div
+              key={index}
+              className="border-2 border-[#254b95] rounded-xl bg-[#fffaf0] p-8"
+            >
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
+                <h1
+                  className="text-lg sm:text-xl lg:text-2xl font-bold text-[#254b95] break-words leading-tight"
+                  
+                >
+                  {item.name}
+                </h1>
+
+                <span className="text-xl font-bold text-[#254b95]">
+                  {item.price}
+                </span>
+              </div>
+
+              <button className="w-full bg-[#254b95] text-white py-3 rounded-full line-through">
+                ORDER NOW
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Wraps + Fries + Drinks */}
+      <div className="grid lg:grid-cols-3 gap-10">
+        
+        {/* Wraps */}
+        <div className="border-2 border-[#254b95] rounded-xl p-8 bg-[#fffaf0]">
+          <h2
+            className="text-4xl font-black text-[#254b95] mb-8"
+            
+          >
+            Wraps
+          </h2>
+
+          <div className="space-y-6">
+            {menuData.wraps.map((item, index) => (
+              <div
+                key={index}
+                className="flex justify-between text-[#254b95] text-xl"
+              >
+                <span>{item.name}</span>
+                <span>{item.price}</span>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {/* Fries */}
+        <div className="border-2 border-[#254b95] rounded-xl p-8 bg-[#fffaf0]">
+          <h2
+            className="text-4xl font-black text-[#254b95] mb-8"
+            
+          >
+            Fries
+          </h2>
+
+          <div className="space-y-6">
+            {menuData.fries.map((item, index) => (
+              <div
+                key={index}
+                className="flex justify-between text-[#254b95] text-xl"
+              >
+                <span>{item.name}</span>
+                <span>{item.price}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Drinks */}
+        <div className="border-2 border-[#254b95] rounded-xl p-8 bg-[#fffaf0]">
+          <h2
+            className="text-4xl font-black text-[#254b95] mb-8"
+            
+          >
+            Drinks
+          </h2>
+
+          <div className="space-y-6">
+            {menuData.drinks.map((item, index) => (
+              <div
+                key={index}
+                className="flex justify-between text-[#254b95] text-xl"
+              >
+                <span>{item.name}</span>
+                <span>{item.price}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

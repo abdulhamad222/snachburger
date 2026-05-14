@@ -1,9 +1,8 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import LocationSection from "@/components/Location";
 import MenuSection from "@/components/MenuSection";
 import Navbar from "@/components/Navbar";
-import PromoSection from "@/components/PromoSection";
-import SocialSection from "@/components/SocialSection";
 
 export default function Home() {
   return (
@@ -11,8 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <MenuSection />
-      <PromoSection />
-      <SocialSection />
+      <LocationSection />
       <Footer />
     </main>
   );

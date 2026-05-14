@@ -1,44 +1,71 @@
+import Image from "next/image";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
+  FaTiktok,
 } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-[#254b95] text-white w-full">
+    <footer id="contact" className="bg-[#254b95] text-white w-full" style={{ fontFamily: "cursive" }}>
       
       {/* Top Section */}
       <div className="w-full px-6 sm:px-10 lg:px-20 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         
         {/* Brand */}
         <div>
-          <h1 className="text-4xl font-extrabold mb-5">
-            SNACH
-          </h1>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/snach-logo.jpg"
+              alt="logo"
+              width={50}
+              height={50}
+              className="rounded-full"
+            />
+
+            <h1 className="text-4xl font-extrabold mb-5">
+              SNACH
+            </h1>
+          </div>
 
           <p className="text-gray-200 leading-7">
-            Fresh burgers, crispy fries, and unforgettable taste.
-            Enjoy premium fast food delivered to your doorstep.
+            WARNING<br />
+            HIGHLY SNACHABLE !<br />
+            BURGER & BEATS
           </p>
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6">
             
-            <div className="bg-white text-[#254b95] p-3 rounded-full hover:scale-110 duration-300 cursor-pointer">
-              <FaFacebookF />
-            </div>
-
-            <div className="bg-white text-[#254b95] p-3 rounded-full hover:scale-110 duration-300 cursor-pointer">
+            <a
+              href="https://www.instagram.com/snachburger"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#254b95] p-3 rounded-full hover:scale-110 duration-300 cursor-pointer"
+            >
               <FaInstagram />
-            </div>
+            </a>
 
-            <div className="bg-white text-[#254b95] p-3 rounded-full hover:scale-110 duration-300 cursor-pointer">
-              <FaTwitter />
-            </div>
+            <a
+              href="https://web.facebook.com/profile.php?id=61588672828386&_rdc=1&_rdr#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#254b95] p-3 rounded-full hover:scale-110 duration-300 cursor-pointer"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@snach.burger"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#254b95] p-3 rounded-full hover:scale-110 duration-300 cursor-pointer"
+            >
+              <FaTiktok />
+            </a>
           </div>
         </div>
 
@@ -49,20 +76,20 @@ export default function Footer() {
           </h2>
 
           <ul className="space-y-4 text-gray-200">
-            <li className="hover:text-white cursor-pointer duration-300">
-              Home
+            <li className="cursor-pointer">
+              <a href="#home">HOME</a>
             </li>
 
-            <li className="hover:text-white cursor-pointer duration-300">
-              Menu
+            <li className="cursor-pointer">
+              <a href="#menu">MENU</a> 
             </li>
 
-            <li className="hover:text-white cursor-pointer duration-300">
-              About
+            <li className="cursor-pointer">
+              <a href="#location">LOCATION</a>
             </li>
 
-            <li className="hover:text-white cursor-pointer duration-300">
-              Contact
+            <li className="cursor-pointer">
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -74,9 +101,7 @@ export default function Footer() {
           </h2>
 
           <div className="space-y-3 text-gray-200">
-            <p>Monday - Friday: 9AM - 11PM</p>
-            <p>Saturday: 10AM - 12AM</p>
-            <p>Sunday: Closed</p>
+            <p>Monday - Sunday: 4PM - 2AM</p>
           </div>
         </div>
 
@@ -90,12 +115,12 @@ export default function Footer() {
             
             <div className="flex items-center gap-3">
               <FaMapMarkerAlt />
-              <p>New York, USA</p>
+              <p>Gateway Towers, Faisalabad, Pakistan</p>
             </div>
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt />
-              <p>+1 650-547-9864</p>
+              <p>+92 327-0111122</p>
             </div>
 
             <div className="flex items-center gap-3">

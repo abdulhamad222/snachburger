@@ -8,13 +8,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b border-gray-200 sticky top-0 bg-white z-50">
+    <nav className="w-full bg-[#fcf6e2] border-b border-gray-200 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 md:px-10 py-4">
 
         {/* Logo */}
         <div className="flex items-center gap-3">
           <Image
-            src="/snach-logo.jpg"
+            src="/images/snach-logo.jpg"
             alt="logo"
             width={50}
             height={50}
@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-sm font-bold">
+        <ul className="hidden md:flex gap-10 text-sm font-bold" style={{ fontFamily: "cursive" }}>
           <a href="#home">
             <li className="hover:text-[#1d3c79] duration-300 cursor-pointer">
               HOME
@@ -40,9 +40,9 @@ export default function Navbar() {
             </li>
           </a>
 
-          <a href="#promo">
+          <a href="#location">
             <li className="hover:text-[#1d3c79] duration-300 cursor-pointer">
-              OFFERS
+              LOCATION
             </li>
           </a>
 
@@ -56,8 +56,8 @@ export default function Navbar() {
         {/* Right Side */}
         <div className="flex items-center gap-4">
 
-          <p className="hidden lg:block font-semibold text-[#254b95]">
-            +92 312-3456789
+          <p className="hidden lg:block font-bold text-[#254b95]">
+            +92 327-0111122
           </p>
 
           <button className="bg-[#254b95] hover:bg-[#1d3c79] duration-300 text-white p-3 rounded-full shadow-lg">
