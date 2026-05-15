@@ -36,7 +36,7 @@ export default function MenuSection() {
   return (
     <section
       id="menu"
-      className="py-20 px-4 sm:px-6 md:px-10"
+      className="py-10 px-4 sm:px-6 md:px-10"
       style={{ fontFamily: "cursive" }}
     >
       {/* Heading */}
