@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaShoppingBasket, FaBars } from "react-icons/fa";
+import { FaBars, FaPhone } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -56,12 +56,12 @@ export default function Navbar() {
         {/* Right Side */}
         <div className="flex items-center gap-4">
 
-          <p className="hidden lg:block font-bold text-[#254b95]">
+          <p className="lg:block font-bold text-[#254b95]">
             +92 327-0111122
           </p>
 
-          <button className="bg-[#254b95] hover:bg-[#1d3c79] duration-300 text-white p-3 rounded-full shadow-lg">
-            <FaShoppingBasket size={18} />
+          <button className="hidden lg:block bg-[#254b95] hover:bg-[#1d3c79] duration-300 text-white p-3 rounded-full shadow-lg">
+            <FaPhone size={18} />
           </button>
 
           {/* Mobile Menu Button */}
@@ -76,8 +76,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-6 py-5">
-          <ul className="flex flex-col gap-5 font-semibold">
+        <div className="md:hidden bg-[#fcf6e2] border-t border-gray-200 px-6 py-5">
+          <ul className="flex flex-col gap-5 font-semibold" style={{ fontFamily: "cursive" }}>
 
             <a href="#home">
               <li>HOME</li>
@@ -87,8 +87,8 @@ export default function Navbar() {
               <li>MENU</li>
             </a>
 
-            <a href="#promo">
-              <li>OFFERS</li>
+            <a href="#location">
+              <li>LOCATION</li>
             </a>
 
             <a href="#contact">

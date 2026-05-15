@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="relative w-full h-[220px] sm:h-[320px] md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
         
         <Image
-          src="/images/snach-banner.jpg"
+          src="/images/snach-banner.png"
           alt="Snach Banner"
           fill
           priority
