@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-[#254b95] text-white w-full" style={{ fontFamily: "cursive" }}>
+    <footer id="contact" className="bg-[#254b95] text-white w-full font-[caveat]">
       
       {/* Top Section */}
       <div className="w-full px-6 sm:px-10 lg:px-20 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">

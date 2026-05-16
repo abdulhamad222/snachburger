@@ -8,8 +8,7 @@ export default function LocationSection() {
   return (
     <section
       id="location"
-      className="py-24"
-      style={{ fontFamily: "cursive" }}
+      className="py-24 font-[caveat]"
     >
       {/* Heading */}
       <div className="text-center mb-20">

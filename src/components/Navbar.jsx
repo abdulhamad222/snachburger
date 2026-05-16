@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <>
       {/* Infinite Top Text */}
-      <div className="w-full bg-[#254b95] overflow-hidden py-2 fixed top-0 left-0 z-[999]">
+      <div className="w-full bg-[#254b95] overflow-hidden py-2 fixed top-0 left-0 z-[999] font-[caveat]">
         <div className="flex whitespace-nowrap animate-scroll">
           <span className="mx-8 text-white font-bold text-sm md:text-lg">
             Online Orders Will Be Available Soon!
@@ -59,8 +59,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul
-            className="hidden md:flex gap-10 text-sm font-bold"
-            style={{ fontFamily: "cursive" }}
+            className="hidden md:flex gap-10 text-sm font-bold font-[caveat]"
           >
             <a href="#home">
               <li className="hover:text-[#1d3c79] duration-300 cursor-pointer">
@@ -92,7 +91,7 @@ export default function Navbar() {
             <a href="https://wa.me/923270111122"
               target="_blank"
               rel="noopener noreferrer">
-                <p className="lg:block font-bold text-[#254b95]">
+                <p className="lg:block font-bold text-[#254b95] font-[math]">
                   +92 327-0111122
                 </p>
             </a>
@@ -115,8 +114,7 @@ export default function Navbar() {
         {open && (
           <div className="md:hidden bg-[#fcf6e2] border-t border-gray-200 px-6 py-5">
             <ul
-              className="flex flex-col gap-5 font-semibold"
-              style={{ fontFamily: "cursive" }}
+              className="flex flex-col gap-5 font-semibold font-[caveat]"
             >
               <a href="#home">
                 <li>HOME</li>

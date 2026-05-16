@@ -36,8 +36,7 @@ export default function MenuSection() {
   return (
     <section
       id="menu"
-      className="py-10 px-4 sm:px-6 md:px-10"
-      style={{ fontFamily: "cursive" }}
+      className="py-10 px-4 sm:px-6 md:px-10 font-[caveat]"
     >
       {/* Heading */}
       <div className="text-center mb-20">
@@ -76,15 +75,15 @@ export default function MenuSection() {
                   {item.name}
                 </h1>
 
-                <span className="text-xl font-bold text-[#254b95]">
-                  {item.price}
-                </span>
+                
               </div>
 
               <p className="text-[#254b95] mb-8" >
                 Fresh grilled beef burger with signature sauces and premium ingredients.
               </p>
-
+              <p className="text-xl font-bold text-center text-[#254b95]">
+                {item.price}
+              </p>
               <button className="w-full bg-[#254b95] hover:bg-[#1d3c79] duration-300 text-white py-3 rounded-full font-semibold line-through">
                 ORDER NOW
               </button>
@@ -116,11 +115,15 @@ export default function MenuSection() {
                   {item.name}
                 </h1>
 
-                <span className="text-xl font-bold text-[#254b95]">
-                  {item.price}
-                </span>
+                
               </div>
-
+              
+              <p className="text-[#254b95] mb-8" >
+                Fresh grilled beef burger with signature sauces and premium ingredients.
+              </p>
+              <p className="text-xl text-center font-bold text-[#254b95]">
+                {item.price}
+              </p>
               <button className="w-full bg-[#254b95] text-white py-3 rounded-full line-through">
                 ORDER NOW
               </button>
