@@ -8,7 +8,7 @@ export default function LocationSection() {
   return (
     <section
       id="location"
-      className="py-24 font-[caveat]"
+      className="py-24"
     >
       {/* Heading */}
       <div className="text-center mb-20">
@@ -34,10 +34,9 @@ export default function LocationSection() {
         <div className="bg-[#254b95] text-white p-8 sm:p-12 flex flex-col justify-center min-h-[500px]">
 
           <h2
-            className="text-4xl sm:text-5xl font-black mb-12"
-            style={{ fontFamily: "cursive" }}
+            className="font-sans text-4xl sm:text-5xl font-black mb-12"
           >
-            SNACH Burger
+            SNACH
           </h2>
 
           {/* Address */}

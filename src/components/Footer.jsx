@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-[#254b95] text-white w-full font-[caveat]">
+    <footer id="contact" className="bg-[#254b95] text-white w-full">
       
       {/* Top Section */}
       <div className="w-full px-6 sm:px-10 lg:px-20 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -26,7 +26,7 @@ export default function Footer() {
               className="rounded-full"
             />
 
-            <h1 className="text-4xl font-extrabold mb-5">
+            <h1 className="font-sans text-4xl font-extrabold mb-5">
               SNACH
             </h1>
           </div>

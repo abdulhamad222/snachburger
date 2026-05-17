@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <>
       {/* Infinite Top Text */}
-      <div className="w-full bg-[#254b95] overflow-hidden py-2 fixed top-0 left-0 z-[999] font-[caveat]">
+      <div className="w-full bg-[#254b95] overflow-hidden py-2 fixed top-0 left-0 z-[999]">
         <div className="flex whitespace-nowrap animate-scroll">
           <span className="mx-8 text-white font-bold text-sm md:text-lg">
             Online Orders Will Be Available Soon!
@@ -52,14 +52,14 @@ export default function Navbar() {
               className="rounded-full"
             />
 
-            <h1 className="text-2xl font-extrabold tracking-wide text-[#254b95]">
+            <h1 className="font-sans text-2xl font-extrabold tracking-wide text-[#254b95]">
               SNACH
             </h1>
           </div>
 
           {/* Desktop Menu */}
           <ul
-            className="hidden md:flex gap-10 text-sm font-bold font-[caveat]"
+            className="hidden md:flex gap-10 text-sm font-bold"
           >
             <a href="#home">
               <li className="hover:text-[#1d3c79] duration-300 cursor-pointer">
@@ -114,7 +114,7 @@ export default function Navbar() {
         {open && (
           <div className="md:hidden bg-[#fcf6e2] border-t border-gray-200 px-6 py-5">
             <ul
-              className="flex flex-col gap-5 font-semibold font-[caveat]"
+              className="flex flex-col gap-5 font-semibold"
             >
               <a href="#home">
                 <li>HOME</li>
